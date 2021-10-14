@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "font1";
+  src: url(./font/static/Raleway-Medium.ttf);
+}
+
+:root {
+  --color1: #0065fc;
+  --color2: #deedff;
+  --color3: #f2f2f2;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "font1", "sans-serif";
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.logo {
+  height: 50px;
+  width: 100px;
+  margin-left: 35px;
+}
+
+.navigation a,
+.navigation a:visited {
+  text-decoration: none;
+  padding-left: 70px;
+  font-size: 0.9rem;
+}
+
+.linkRoom {
+  position: relative;
+  color: var(--color1);
+}
+
+.linkRoom::before {
+  content: "";
+  display: block;
+  background: var(--color1);
+  width: 150px;
+  height: 1px;
+  position: absolute;
+  top: -65px;
+  left: 45px;
+}
+
+.registration {
+  margin-right: 35px;
+  color: var(--color1);
+}
+
+.linkActivity {
+  color: black;
+}
