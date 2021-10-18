@@ -35,31 +35,35 @@ header {
   padding-right: 35px;
 }
 
-.registration {
-  text-decoration: none;
-  color: var(--color1);
-  margin-left: 45px;
-  font-size: 0.9rem;
-}
-
 .navLink,
 .navLink:visited {
   text-decoration: none;
   font-size: 0.9rem;
-  border-top: 1.4px solid transparent;
   padding: 0 25px;
   margin-left: 45px;
   padding-top: 44px;
+}
+
+.link13 {
+  color: var(--color1);
+}
+
+.link2 {
   color: black;
 }
 
-.navLink:hover {
-  color: var(--color1);
+.borderTop1 {
   border-top: 1.4px solid var(--color1);
-  transition: 0.2s;
+}
+
+.borderTop23 {
+  border-top: 1.4px solid transparent;
 }
 
 /* Main */
+
+/* Trouver un hébergement */
+
 /* Footer */
 
 footer {
