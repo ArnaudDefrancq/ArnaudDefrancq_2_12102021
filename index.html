@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <title>Reservia</title>
     <link rel="shortcut icon" href="./images/logo/Reservia.svg">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/daf6fd0411.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -25,8 +28,73 @@
 
         <!-- Trouver un hébergement -->
         <section class="findRoom">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
+            <div class="topFindroom">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <form>
+                <div class="search-container">
+                    <div class="search-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <input class="search" type="text" value="Marseille, France">
+                    </div>
+                    <div>
+                        <button class="button" type="submit">Rechercher</button>
+                    </div>
+                </div>
+
+
+                <div class="checkbox-container">
+                    <p>Filtres</p>
+
+                    <input class="filter-checkbox" type="checkbox" id="economic">
+                    <label class="filter-label" for="economic">
+                        <div class="filter-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div>
+                            <p>Économique</p>
+                        </div>
+                    </label>
+
+                    <input class="filter-checkbox" type="checkbox" id="family">
+                    <label class="filter-label" for="family">
+                        <div class="filter-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <div>
+                            <p>Familial</p>
+                        </div>
+                    </label>
+
+                    <input class="filter-checkbox" type="checkbox" id="romantic">
+                    <label class="filter-label" for="romantic">
+                        <div class="filter-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div>
+                            <p>Romantique</p>
+                        </div>
+                    </label>
+
+                    <input class="filter-checkbox" type="checkbox" id="animal">
+                    <label class="filter-label" for="animal">
+                        <div class="filter-icon">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <div>
+                            <p>Animaux autorisés</p>
+                        </div>
+                    </label>
+
+                </div>
+            </form>
+            <div class="info-container">
+                <p class="info-icon"><i class="fas fa-info"></i></p>
+                <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
 
         </section>
 
@@ -46,7 +114,7 @@
     <!-- Footer -->
     <footer>
 
-        <!-- A propos -->
+         <!-- A propos -->
         <section class="abstract">
             <h3 class="footerTitle">A propos</h3>
             <ul>
@@ -56,7 +124,7 @@
             </ul>
         </section>
 
-        <!-- Nos hébergements -->
+        <!-- Nos hébergements  -->
         <section class="abstract">
             <h3 class="footerTitle">Nos hébergements</h3>
             <ul>
@@ -78,4 +146,5 @@
 
 
 </body>
+
 </html>
