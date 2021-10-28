@@ -189,6 +189,7 @@ form {
   display: flex;
   justify-content: space-around;
   margin: 0 30px;
+  height: 750px;
 }
 
 /* Partie hébergements */
@@ -196,8 +197,9 @@ form {
 .host {
   background: var(--color3);
   border-radius: 15px;
-  flex: 1;
+  flex: 2;
   margin-right: 50px;
+  height: 730px;
 }
 
 .host h2 {
@@ -209,35 +211,53 @@ form {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 60px;
   column-gap: 40px;
-  row-gap: 20px;
-}
-
-.background {
-  background: tan;
+  row-gap: 40px;
 }
 
 .box-room {
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 235px;
   border: 3px solid white;
   border-radius: 15px;
-  box-shadow: 0px 0px 9px 0px black;
-}
-
-.position {
-  position: relative;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
 }
 
 .info-room {
-  position: absolute;
-  bottom: 0;
   background: white;
   width: 100%;
-  height: 40%;
+  height: 80px;
   border-radius: 0 0 10px 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.host-link {
+  text-decoration: none;
+  color: black;
+}
+
+.info {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.img {
+  height: 150px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 .more {
   margin: 40px 40px;
+}
+
+.more-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 /* partie populaire */
@@ -245,12 +265,14 @@ form {
 .popular {
   background: var(--color3);
   border-radius: 15px;
-  flex: 0.5;
+  flex: 1;
+  height: 730px; 
 }
 
 .popular h2 {
   margin: 40px 40px;
 }
+
 
 .grid-popular {
   display: grid;
@@ -260,20 +282,43 @@ form {
 }
 
 .info-popular {
-  position: absolute;
-  right: 0;
+  position: relative ;
   background: white;
   height: 100%;
-  width: 60%;
+  width: 295px;
   border-radius: 0 10px 10px 0;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .box-popular {
-  height: 135px;
+  display: flex;
+  height: 170px;
   border: 3px solid white;
   border-radius: 15px;
-  box-shadow: 0px 0px 9px 0px black;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);}
+
+.img-popular {
+  height: 100%;
+  width: 180px;
+  border-radius: 15px 0 0 15px;
 }
+
+.popular-link {
+  text-decoration: none;
+  color: black;
+}
+
+.price-popular {
+  margin-top: 10px;
+}
+
+.icon-popular {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
 
 /* Activités à Marseille */
 
@@ -281,33 +326,7 @@ form {
   margin: 60px 30px;
 }
 
-.grid-activity {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "lieux1 lieux2 lieux4 lieux5"
-  "lieux1 lieux3 lieux4 lieux6";
-}
 
-.lieux1 {
-  grid-area: lieux1;
-}
-.lieux2 {
-  grid-area: lieux2;
-}
-.lieux3 {
-  grid-area: lieux3;
-}
-.lieux4 {
-  grid-area: lieux4;
-}
-.lieux5 {
-  grid-area: lieux5;
-}
-.lieux6 {
-  grid-area: lieux6;
-}
 
 /* Footer */
 
