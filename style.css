@@ -272,8 +272,15 @@ form {
   height: 730px; 
 }
 
-.popular h2 {
-  margin: 40px 40px;
+.top-popular {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 30px;
+}
+.icon-top {
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 
@@ -327,6 +334,23 @@ form {
   position: absolute;
   bottom: 0;
   padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.flex-star {
+  display: flex;
+  font-size: 0.9rem;
+
+}
+
+.blue-star {
+  color: var(--color1);
+  font-size: 0.9rem;
+}
+
+.grey-star {
+  color: var(--color3);
+  font-size: 0.9rem;
 }
 
 
