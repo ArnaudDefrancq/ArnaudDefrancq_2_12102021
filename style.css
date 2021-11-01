@@ -16,13 +16,16 @@
   font-family: "font1", "sans-serif";
 }
 
+
 /* Header */
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  width: 98%;
+  max-width: 1440px;
+  margin: 30px auto;
 }
 
 .logo {
@@ -38,34 +41,38 @@ header {
 .navLink,
 .navLink:visited {
   text-decoration: none;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
   padding: 0 25px;
   margin-left: 45px;
   padding-top: 44px;
+  border-top: 1.8px;
 }
 
-.link13 {
+.link-blue {
   color: var(--color1);
 }
 
-.link2 {
+.link-black {
   color: black;
 }
 
-.borderTop1 {
-  border-top: 1.4px solid var(--color1);
+.border-top {
+  border-top: 1.8px solid var(--color1);
 }
 
-.borderTop23 {
-  border-top: 1.4px solid transparent;
-}
 
 /* Main */
+
+main {
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
 
 /* Trouver un hébergement */
 
 .findRoom {
-  margin: 50px 35px;
+  margin: 60px 35px;
 }
 
 .topFindroom p {
@@ -85,7 +92,7 @@ form {
 
 .search-icon {
   height: 50px;
-  width: 50px;
+  width: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +102,7 @@ form {
 
 .search {
   height: 50px;
-  width: 250px;
+  width: 220px;
   border-top: 0.5px solid var(--color3);
   border-bottom: 0.5px solid var(--color3);
   border-left: none;
@@ -105,16 +112,22 @@ form {
   padding: 20px;
 }
 
-.button {
-  height: 50px;
-  width: 150px;
-  border: none;
-  background: var(--color1);
-  color: white;
-  border-radius: 0 10px 10px 0;
+.search::placeholder {
+  color: black;
   font-size: 1rem;
-  cursor: pointer;
+  font-weight: 600;
+}
 
+.button {
+  height: auto;
+  border: none;
+  border-radius: 0 14px 14px 0;
+  background-color: #0065fc;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .search:focus {
@@ -126,6 +139,10 @@ form {
   align-items: center;
   font-weight: bold;
   margin-top: 40px;
+}
+
+.filter {
+  font-size: 1.2rem;
 }
 
 .filter-checkbox {
@@ -142,6 +159,11 @@ form {
   padding-right: 20px;
   transition: 0.5s;
   margin: 0 30px;
+}
+
+.filter-label:hover {
+  background: var(--color2);
+
 }
 
 .filter-icon {
@@ -189,7 +211,7 @@ form {
   display: flex;
   justify-content: space-around;
   margin: 0 30px;
-  height: 730px;
+  height: 650px;
 }
 
 /* Partie hébergements */
@@ -199,7 +221,7 @@ form {
   border-radius: 15px;
   flex: 2;
   margin-right: 50px;
-  height: 730px;
+  height: 100%;
 }
 
 .host h2 {
@@ -209,35 +231,28 @@ form {
 .grid-room {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 60px;
-  column-gap: 40px;
-  row-gap: 40px;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 45px;
+  gap: 27px;
+  height: 70%;
 }
 
 .box-room {
   display: flex;
   flex-direction: column;
-  height: 230px;
-  width: 100%;
   border: 3px solid white;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
 }
 
 .info-room {
   background: white;
-  width: 100%;
-  height: 80px;
   border-radius: 0 0 10px 10px;
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.host-link {
-  text-decoration: none;
-  color: black;
-}
 
 .info {
   margin: 5px 0;
@@ -245,14 +260,14 @@ form {
 }
 
 .img {
-  height: 150px;
   width: 100%;
+  height: 100%;
   border-radius: 15px 15px 0 0;
-  cursor: pointer;
 }
 
+
 .more {
-  margin: 40px 40px;
+  margin: 30px 40px;
 }
 
 .more-link {
@@ -269,7 +284,7 @@ form {
   background: var(--color3);
   border-radius: 15px;
   flex: 1;
-  height: 730px; 
+  height: 100%;
 }
 
 .top-popular {
@@ -278,6 +293,7 @@ form {
   align-items: center;
   margin: 40px 30px;
 }
+
 .icon-top {
   font-weight: bold;
   font-size: 1.6rem;
@@ -289,58 +305,71 @@ form {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 40px;
-  margin: 0 60px;
+  height: 80%;
 }
 
-
-
 .info-popular {
-  position: relative ;
   background: white;
-  height: 100%;
-  width: 100%;
   border-radius: 0 10px 10px 0;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 .box-popular {
-  display: flex;
-  height: 170px;
-  width: 100%;
+  height: 100%;
   border: 3px solid white;
   border-radius: 15px;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+  margin: 0 35px;
 }
 
 .img-popular {
+  width: 45%;
   height: 100%;
-  width: 230px;
   border-radius: 15px 0 0 15px;
-  cursor: pointer;
+
 }
 
-.popular-link {
-  width: 100%;
-  text-decoration: none;
-  color: black;
-}
 
 .price-popular {
   margin-top: 10px;
+  font-size: 0.9rem;
 }
 
 .icon-popular {
-  position: absolute;
-  bottom: 0;
   padding-bottom: 10px;
   font-size: 0.9rem;
 }
 
-.flex-star {
-  display: flex;
-  font-size: 0.9rem;
+.popular-link {
+  width: 100%;
+}
 
+.flex-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 70%;
+
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.test {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 .blue-star {
@@ -353,10 +382,15 @@ form {
   font-size: 0.9rem;
 }
 
+.test2:hover {
+  transform: scale(1.05);
+  transition: ease 0.4s;
+}
+
 
 /* Activités à Marseille */
 
-.activity{
+.activity {
   margin: 50px 30px;
 }
 
@@ -367,19 +401,19 @@ form {
 }
 
 .box-activity14 {
- display: flex;
- flex-direction: column;
- align-items: center;
- height: 600px;
- width: 23%;
- box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
- border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 23%;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
 }
 
 .img-activity14 {
   height: 550px;
   width: 100%;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
 }
 
 .info-activity {
@@ -390,7 +424,7 @@ form {
 
 .box-activity2356 {
   width: 23%;
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -401,9 +435,9 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
+  height: 265px;
   width: 100%;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
 }
 
@@ -411,7 +445,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 220px;
+  height: 190px;
   width: 100%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.33);
   border-radius: 10px;
@@ -436,7 +470,7 @@ form {
   padding-left: 30px;
 }
 
-.link-activity{
+.link-activity {
   text-decoration: none;
   color: black;
 }
@@ -449,7 +483,10 @@ footer {
   justify-content: space-between;
   font-size: 0.9rem;
   padding: 50px 0;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .footerTitle {
