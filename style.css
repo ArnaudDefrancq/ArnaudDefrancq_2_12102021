@@ -257,9 +257,10 @@ form {
 .info {
   margin: 5px 0;
   font-size: 0.9rem;
+
 }
 
-.img {
+.img-host {
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
@@ -304,7 +305,7 @@ form {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 40px;
+  row-gap: 35px;
   height: 80%;
 }
 
@@ -318,7 +319,7 @@ form {
 }
 
 .box-popular {
-  height: 100%;
+  height: 90%;
   border: 3px solid white;
   border-radius: 15px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
@@ -356,7 +357,7 @@ form {
 
 }
 
-.links {
+.link-host {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -364,7 +365,7 @@ form {
   color: black;
 }
 
-.test {
+.flex-popular {
   display: flex;
   height: 100%;
   width: 100%;
@@ -382,7 +383,7 @@ form {
   font-size: 0.9rem;
 }
 
-.test2:hover {
+.box-animation:hover {
   transform: scale(1.05);
   transition: ease 0.4s;
 }
@@ -391,11 +392,15 @@ form {
 /* Activités à Marseille */
 
 .activity {
-  margin: 50px 30px;
+  margin-top: 60px;
+}
+
+.activity h2 {
+  margin-left: 30px;
 }
 
 .activity-container {
-  margin: 50px 0;
+  margin: 30px 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -408,6 +413,7 @@ form {
   width: 23%;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .img-activity14 {
@@ -429,6 +435,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .box-activity26 {
