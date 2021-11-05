@@ -24,7 +24,7 @@ a {
 
 /* Header */
 
-header {
+.header1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -64,6 +64,9 @@ header {
 .border-top {
   border-top: 1.8px solid var(--color1);
 }
+
+
+
 
 
 /* Main */
@@ -412,7 +415,6 @@ form {
     "activity1 activity2 activity4 activity6"
     "activity1 activity3 activity4 activity6"
     "activity1 activity3 activity4 activity6";
-
 }
 
 .activity1 {
@@ -509,10 +511,26 @@ footer li {
   padding-left: 50px;
 }
 
-/* mediea queries 1400px */
+/* mediea queries 1200px and more */
+
+@media screen and (max-width: 1440px) {
+  .header2 {
+    display: none;
+  }
+  
+  .search-container2 {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1400px) {
-
+  .header2 {
+    display: none;
+  }
+  
+  .search-container2 {
+    display: none;
+  }
   .flex-info {
     width: 100%;
   }
@@ -528,9 +546,13 @@ footer li {
   }
 }
 
-/* media queries 1200px */
+
+/* media queries 1025px - 1200px */
 
 @media screen and (max-width: 1200px) {
+  .header2 {
+    display: none;
+  }
 
   .room {
     flex-direction: column-reverse;
@@ -563,87 +585,123 @@ footer li {
   }
 }
 
-/* media queries 900px */
-@media screen and (max-width: 900px) {
-
-
-  .filter-container {
+@media screen and (max-width: 1104px) {
+  .filter-label {
     margin-top: 20px;
   }
-
-  .checkbox-container {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    row-gap: 40px;
-  }
-
-  .grid-popular {
-    padding: 0 5px;
-  }
-
-  .grid-room {
-    margin: 0;
-    padding: 0 5px;
-  }
-
-  .info-activity {
-    height: 100px;
-  }
-
+  
   .activity-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "activity1 activity2 activity3"
-      "activity4 activity5 activity6";
+    grid-template-areas: 
+    "activity1 activity2 activity3"
+    "activity4 activity5 activity6";
+    gap: 20px;
   }
-
   .activity1 {
     grid-area: activity1;
   }
-
   .activity2 {
     grid-area: activity2;
   }
-
   .activity3 {
     grid-area: activity3;
   }
-
   .activity4 {
     grid-area: activity4;
   }
-
   .activity5 {
     grid-area: activity5;
   }
-
   .activity6 {
     grid-area: activity6;
   }
+}
 
-  .info-activity {
-    height: 20%;
+@media screen and (max-width: 1044px) {
+  .checkbox-container {
+    flex-wrap: wrap;
+  }
+  
+  .filter-label {
+    margin-top: 20px;
+  }
+}
+/* media queries 900px */
+
+@media screen and (max-width: 900px) {
+  .grid-popular, .grid-room {
+    margin: 0;
+    padding: 0 20px;
+    gap: 20px;
   }
 }
 
 /* media queries 600px */
 
-
-
 @media screen and (max-width: 600px) {
-  .checkbox-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 27px;
+  .header1 {
+    display: none;
+  }
+
+  .header2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    
+  }
+
+  .header-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 35px;
+    margin-top: 30px;
+  }
+
+  .logo-mobile {
+    height: 75px;
+  }
+
+  .register {
+    color: var(--color1);
+    font-size: 1.1rem;
+  }
+
+  .header-part2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .border-bottom {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.23);
+    width: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  .link-blue {
+    border-bottom: 2px solid var(--color1);
+  }
+  .findRoom {
+    margin-top: 30px;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 
   .filter-label {
-    margin: 0;
+    margin: 15px;
   }
-
 
   main {
     width: 100%;
@@ -742,3 +800,115 @@ footer li {
     margin-bottom: 40px;
   }
 }
+ /* media queries smartphone */
+
+ @media screen and (max-width: 375px) {
+  .header2 {
+    height: 150px;
+
+  }
+  
+  .header-part1 {
+    padding: 0 20px;
+  }
+
+ .logo-mobile {
+    height: 50px;
+    width: 90px;
+  }   
+  
+  .border-bottom, .register {
+    font-size: 0.95rem;
+  }
+
+ .findRoom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 25px;
+  }
+
+  .topFindroom p {
+    padding-top: 25px;
+  }
+
+  form {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .search-container2 {
+    display: flex;
+  }
+
+  .button {
+    border-radius: 15px;
+  }
+
+  .checkbox-container {
+    justify-content: space-between;
+  }
+
+  .filter-container {
+    margin-top: 30px;
+  }
+
+  .filter {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .filter-label {
+    margin: 10px 0;
+  }
+
+  .info-container {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .info-container {
+    margin-top: 30px;
+  }
+  .info-text {
+    font-size: 0.9rem;
+  }
+
+  .top-popular {
+    padding: 0 15px;
+  }
+
+  .box-popular {
+    margin: 0 25px;
+  }
+
+  .host {
+    margin: 0;
+  }
+
+  .host h2, .more {
+    margin-left: 25px;
+  }
+
+  .box-room {
+    margin: 0 25px;
+  }
+
+  .activity {
+    margin: 0;
+  }
+
+  .activity h2 {
+    margin-left: 25px;
+  }
+
+  .activity-container {
+    margin: 30px 25px;
+  }
+ }
