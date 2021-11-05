@@ -508,8 +508,8 @@ footer li {
   padding-left: 50px;
 }
 
+/* mediea queries 1400px */
 
-/* media queries 1400px */
 @media screen and (max-width: 1400px) {
 
   .flex-info {
@@ -561,41 +561,64 @@ footer li {
   }
 }
 
-/* media queries 1100px */
-
-@media screen and (max-width: 1100px) {
-  .filter-label {
-    margin: 0 5px;
-  }
-  
-  .filter {
-    margin-right: 10px;
-  }
+/* media queries 900px */
+.filter-container {
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 900px) {
-  .filter-container {
-    margin-top: 20px;
-  }
+.checkbox-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  row-gap: 40px;
+}
 
-  .checkbox-container {
-    margin-top: 20px;
-  }
+.grid-popular {
+  padding: 0 5px;
+}
 
-  .grid-popular {
-    padding: 0 5px;
-  }
+.grid-room {
+  margin: 0;
+  padding: 0 5px;
+}
 
-  .grid-room {
-    margin: 0;
-    padding: 0 5px;
-  }
+.info-activity {
+  height: 100px;
+}
 
-  .info-activity {
-    height: 100px;
-  }
+.activity-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "activity1 activity2 activity3"
+  "activity4 activity5 activity6";
+}
 
-  .activity-container {
-   
-  }
+.activity1 {
+  grid-area: activity1;
+}
+
+.activity2 {
+  grid-area: activity2;
+}
+
+.activity3 {
+  grid-area: activity3;
+}
+
+.activity4{
+  grid-area: activity4;
+}
+
+.activity5{
+  grid-area: activity5;
+}
+
+.activity6 {
+  grid-area: activity6;
+}
+
+.info-activity {
+  height: 20%;
 }
