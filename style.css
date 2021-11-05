@@ -66,6 +66,9 @@ a {
 }
 
 
+.header2 {
+  display: none;
+}
 
 
 
@@ -96,6 +99,10 @@ form {
 
 .search-container {
   display: flex;
+}
+
+.search-container2 {
+  display: none;
 }
 
 .search-icon {
