@@ -816,7 +816,7 @@ footer li {
   }
   
   .header-part1 {
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
  .logo-mobile {
@@ -833,7 +833,7 @@ footer li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 25px;
+    margin: 30px 40px;
   }
 
   .topFindroom p {
@@ -852,6 +852,11 @@ footer li {
 
   .search-container2 {
     display: flex;
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
   }
 
   .button {
@@ -888,11 +893,11 @@ footer li {
   }
 
   .top-popular {
-    padding: 0 15px;
+    padding: 0 40px;
   }
 
   .box-popular {
-    margin: 0 25px;
+    margin: 0 40px;
   }
 
   .host {
@@ -900,15 +905,45 @@ footer li {
   }
 
   .host h2, .more {
+    margin-left: 40px;
+  }
+
+  .box-room {
+    margin: 0 40px;
+  }
+
+  .activity {
+    margin: 0;
+  }
+
+  .activity h2 {
+    margin-left: 40px;
+  }
+
+  .activity-container {
+    margin: 30px 40px;
+  }
+ }
+
+ @media screen and (max-width: 375px) {
+   .header-part1 {
+     padding: 0 25px;
+   }
+   .findRoom {
+     margin: 30px 25px
+   }
+   .top-popular {
+    padding: 0 25px;
+  }
+  .box-popular {
+    margin: 0 25px;
+  }
+  .host h2, .more {
     margin-left: 25px;
   }
 
   .box-room {
     margin: 0 25px;
-  }
-
-  .activity {
-    margin: 0;
   }
 
   .activity h2 {
