@@ -29,8 +29,9 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 98%;
+  height: 100px;
   max-width: 1440px;
-  margin: 30px auto;
+  margin: auto;
 }
 
 .logo {
@@ -40,34 +41,29 @@ a {
 }
 
 .navigation {
-  padding-right: 35px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
 
-.navLink,
-.navLink:visited {
-  text-decoration: none;
-  /* font-size: 0.9rem; */
-  padding: 0 25px;
-  margin-left: 45px;
-  padding-top: 44px;
-  border-top: 1.8px;
+.nav-link,
+.nav-link:visited {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  border-top: 2.5px solid transparent;
+  height: 100%;
 }
 
 .link-blue {
   color: var(--color1);
 }
 
-.link-black {
-  color: black;
-}
-
-.border-top {
-  border-top: 1.8px solid var(--color1);
-}
-
-
-.header2 {
-  display: none;
+.link-animation:hover {
+  color: var(--color1);
+  border-top: 2.5px solid var(--color1);
+  transition: 0.2s;
 }
 
 
@@ -82,11 +78,11 @@ main {
 
 /* Trouver un hébergement */
 
-.findRoom {
-  margin: 60px 35px;
+.find-room {
+  margin: 35px;
 }
 
-.topFindroom p {
+.para1 {
   padding-top: 10px;
 }
 
@@ -99,11 +95,9 @@ form {
 
 .search-container {
   display: flex;
+  align-items: center;
 }
 
-.search-container2 {
-  display: none;
-}
 
 .search-icon {
   height: 50px;
@@ -113,11 +107,12 @@ form {
   justify-content: center;
   background: var(--color3);
   border-radius: 10px 0 0 10px;
+  font-size: 1.2rem;
 }
 
 .search {
   height: 50px;
-  width: 220px;
+  width: 240px;
   border-top: 0.5px solid var(--color3);
   border-bottom: 0.5px solid var(--color3);
   border-left: none;
@@ -129,20 +124,22 @@ form {
 
 .search::placeholder {
   color: black;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: bold;
 }
 
 .button {
   height: auto;
+  width: 130px;
   border: none;
   border-radius: 0 14px 14px 0;
   background-color: #0065fc;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 16px;
   padding: 15px;
   cursor: pointer;
+  letter-spacing: 1.3px;
 }
 
 .search:focus {
@@ -153,10 +150,11 @@ form {
   display: inline-flex;
   align-items: center;
   font-weight: bold;
+  margin-left: 25px;
 }
 
 .filter-container {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .filter {
@@ -178,12 +176,8 @@ form {
   cursor: pointer;
   padding-right: 20px;
   transition: 0.5s;
-  margin: 0 30px;
-}
-
-.filter-label:hover {
-  background: var(--color2);
-
+  margin-right: 40px;
+  height: 50px;
 }
 
 .filter-icon {
@@ -194,8 +188,8 @@ form {
   color: var(--color1);
   background: var(--color2);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .filter-checkbox:checked+.filter-label {
@@ -213,8 +207,9 @@ form {
   border: 0.5px solid var(--color3);
   padding: 10px;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
+  font-size: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +236,6 @@ form {
   justify-content: space-between;
   background: var(--color3);
   border-radius: 15px;
-  height: 100%;
   margin-right: 45px;
   flex: 2;
 }
@@ -256,7 +250,6 @@ form {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 45px;
   gap: 27px;
-
   height: 100%;
 }
 
@@ -281,7 +274,7 @@ form {
 }
 
 
-.info {
+.info-host {
   margin: 5px 0;
 
 }
@@ -309,16 +302,16 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content:center;
   background: var(--color3);
   border-radius: 15px;
   flex: 1;
-  height: 100%;
 }
 
 .top-popular {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: 40px 0;
   padding: 0 35px;
@@ -336,8 +329,9 @@ form {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   row-gap: 35px;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 .info-popular {
@@ -351,6 +345,7 @@ form {
 .box-popular {
   display: flex;
   height: 100%;
+  margin: 0 35px;
   border: 3px solid white;
   border-radius: 15px;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
@@ -494,7 +489,6 @@ footer {
   justify-content: space-between;
   font-size: 0.9rem;
   padding: 50px 0;
-  /* margin-top: 30px; */
   width: 98%;
   max-width: 1440px;
   margin: auto;
@@ -518,85 +512,69 @@ footer li {
   padding-left: 50px;
 }
 
-/* mediea queries 1200px and more */
-
-@media screen and (max-width: 1440px) {
+/* mediea queries grand écran */
+@media screen and (max-width: 4000px) {
   .header2 {
     display: none;
   }
-  
-  .search-container2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .header2 {
-    display: none;
-  }
-  
   .search-container2 {
     display: none;
   }
   .flex-info {
     width: 100%;
   }
-
   .info-room {
     height: 80%;
     ;
     width: 100%;
   }
-
   .info-activity {
     width: 70%;
   }
 }
 
-
-/* media queries 1025px - 1200px */
+/* media queries 1200px */
 
 @media screen and (max-width: 1200px) {
-  .header2 {
-    display: none;
-  }
-
   .room {
     flex-direction: column-reverse;
     height: 1000px;
   }
-
   .popular {
     margin-bottom: 50px;
+    width: 100%;
   }
-
   .grid-popular {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 40px;
-    width: 100%;
-    padding: 0 45px;
+    padding-left: 35px;
+    padding-right: 35px;
   }
-
   .box-popular {
-    height: 80%;
+    height: 90%;
+    width: 100%;
+    margin: 0;
   }
-
   .host {
     height: 100%;
     margin: 0;
   }
-
   .grid-room {
     gap: 40px;
   }
 }
 
-@media screen and (max-width: 1104px) {
+/* media queries 992px */
+@media screen and (max-width: 992px) {
   .filter-label {
     margin-top: 20px;
   }
-  
+  .grid-popular, .grid-room {
+    margin: 0;
+    padding: 0 20px;
+    gap: 20px;
+  } 
   .activity-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -625,32 +603,11 @@ footer li {
   }
 }
 
-@media screen and (max-width: 1044px) {
-  .checkbox-container {
-    flex-wrap: wrap;
-  }
-  
-  .filter-label {
-    margin-top: 20px;
-  }
-}
-/* media queries 900px */
-
-@media screen and (max-width: 900px) {
-  .grid-popular, .grid-room {
-    margin: 0;
-    padding: 0 20px;
-    gap: 20px;
-  }
-}
-
-/* media queries 600px */
-
-@media screen and (max-width: 600px) {
+/* media queries 768px */
+@media screen and (max-width: 768px) {
   .header1 {
     display: none;
   }
-
   .header2 {
     display: flex;
     flex-direction: column;
@@ -659,7 +616,6 @@ footer li {
     height: 200px;
     
   }
-
   .header-part1 {
     display: flex;
     align-items: center;
@@ -668,102 +624,88 @@ footer li {
     padding: 0 35px;
     margin-top: 30px;
   }
-
   .logo-mobile {
     height: 75px;
   }
-
   .register {
     color: var(--color1);
     font-size: 1.1rem;
   }
-
   .header-part2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-  
   .border-bottom {
     border-bottom: 2px solid rgba(0, 0, 0, 0.23);
-    width: 300px;
+    width: 100%;
     text-align: center;
     padding-bottom: 10px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
-
   .link-blue {
     border-bottom: 2px solid var(--color1);
   }
-  .findRoom {
+  .find-room {
     margin-top: 30px;
   }
-  
   .navigation {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
   }
-
   .filter-label {
     margin: 15px;
   }
-
   main {
     width: 100%;
   }
-
+  .checkbox-container {
+    flex-wrap: wrap;
+  }
   .room {
     flex: none;
     height: 100%;
     margin: 0;
   }
-  
   .popular {
     flex: none;
     height: 700px;
     width: 100%;
     border-radius: 0px;
   }
-
   .grid-popular {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 0;
+    padding: 0 35px;
+    margin-bottom: 20px;
   }
-
   .box-popular {
     height: 100%;
-    margin: 0 35px;
+    margin: 0;
   }
-
   .host {
     background: none;
     flex: none;
     height: 2000px;
     margin: 0 35px;
   }
-
   .host h2 {
     margin-left: 0;
   }
-
   .grid-room {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
     padding: 0;
     
   }
-
   .info-room {
     height: 40%;
   }
-
   .more {
     margin: 40px 0;
   }
-
   .activity-container {
     height: 1500px;
     grid-template-columns: 1fr;
@@ -794,11 +736,9 @@ footer li {
   .activity6 {
     grid-area: activity6;
   }
-
   .info-activity {
     height: 50px;
   }
-  
   footer {
     width: 100%;
     flex-direction: column;
@@ -807,150 +747,137 @@ footer li {
     margin-bottom: 40px;
   }
 }
- /* media queries smartphone */
 
- @media screen and (max-width: 414px) {
+ /* media queries 576px */
+ @media screen and (max-width: 576px) {
   .header2 {
     height: 150px;
-
   }
-  
   .header-part1 {
-    padding: 0 40px;
+    padding: 0 25px;
   }
-
  .logo-mobile {
     height: 50px;
     width: 90px;
-  }   
-  
-  .border-bottom, .register {
-    font-size: 0.95rem;
-  }
-
- .findRoom {
+  } 
+  /* .border-bottom, .register {
+    font-size: 1.2rem;
+  } */
+ .find-room {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 40px;
+    margin: 30px 25px;
   }
-
   .topFindroom p {
     padding-top: 25px;
   }
-
   form {
     margin-top: 40px;
     justify-content: center;
     align-items: center;
   }
-
   .search-container {
     display: none;
   }
-
   .search-container2 {
     display: flex;
     width: 100%;
   }
-
   .search {
     width: 100%;
   }
-
   .button {
     border-radius: 15px;
+    width: 100%;
   }
-
   .checkbox-container {
     justify-content: space-between;
+    margin: 0;
   }
-
   .filter-container {
     margin-top: 30px;
   }
-
   .filter {
     display: block;
     margin-bottom: 10px;
   }
-
   .filter-label {
     margin: 10px 0;
   }
-
   .info-container {
     align-items: flex-start;
     justify-content: center;
   }
-
   .info-container {
     margin-top: 30px;
   }
   .info-text {
     font-size: 0.9rem;
   }
-
+  .popular {
+    margin: 0;
+  }
   .top-popular {
-    padding: 0 40px;
+    padding: 0 25px;
   }
-
-  .box-popular {
-    margin: 0 40px;
+  .grid-popular {
+    padding: 0 25px;
   }
-
   .host {
     margin: 0;
   }
-
   .host h2, .more {
-    margin-left: 40px;
+    margin-left: 25px;
   }
-
   .box-room {
-    margin: 0 40px;
+    margin: 0 25px;
   }
-
   .activity {
     margin: 0;
   }
-
-  .activity h2 {
-    margin-left: 40px;
-  }
-
-  .activity-container {
-    margin: 30px 40px;
-  }
- }
-
- @media screen and (max-width: 375px) {
-   .header-part1 {
-     padding: 0 25px;
-   }
-   .findRoom {
-     margin: 30px 25px
-   }
-   .top-popular {
-    padding: 0 25px;
-  }
-  .box-popular {
-    margin: 0 25px;
-  }
-  .host h2, .more {
-    margin-left: 25px;
-  }
-
-  .box-room {
-    margin: 0 25px;
-  }
-
   .activity h2 {
     margin-left: 25px;
   }
-
   .activity-container {
     margin: 30px 25px;
   }
  }
+
+ /* mediea queries 387px */
+ @media screen and (max-width: 387px) {
+  .checkbox-container {
+   flex-direction: column;
+   align-items: flex-start;
+  }
+  .filter-container {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+  }
+  .header-part1 {
+   padding: 0 20px;
+  }
+  .findRoom {
+    margin: 30px 20px
+  }
+  .top-popular {
+   padding: 0 20px;
+ }
+ .box-popular {
+   margin: 0;
+ }
+ .host h2, .more {
+   margin-left: 20px;
+ }
+ .box-room {
+   margin: 0 20px;
+ }
+ .activity h2 {
+   margin-left: 20px;
+ }
+ .activity-container {
+   margin: 30px 20px;
+ }
+}
