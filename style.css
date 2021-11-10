@@ -79,7 +79,7 @@ main {
 /* Trouver un hébergement */
 
 .find-room {
-  margin: 35px;
+  margin: 0 35px;
 }
 
 .para1 {
@@ -192,6 +192,10 @@ form {
   align-items: center;
 }
 
+label {
+  cursor: pointer;
+}
+
 .filter-checkbox:checked+.filter-label {
   background: var(--color2);
 }
@@ -224,7 +228,7 @@ form {
 .room {
   display: flex;
   justify-content: space-around;
-  margin: 0 30px;
+  margin: 30px;
   height: 650px;
 }
 
