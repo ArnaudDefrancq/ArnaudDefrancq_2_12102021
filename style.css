@@ -227,7 +227,6 @@ label {
 
 .room {
   display: flex;
-  justify-content: space-around;
   margin: 30px;
   height: 650px;
 }
@@ -424,7 +423,6 @@ label {
 }
 
 .activity1 {
-
   grid-area: activity1;
 }
 
@@ -517,7 +515,7 @@ footer li {
 }
 
 /* mediea queries grand écran */
-@media screen and (max-width: 4000px) {
+@media screen and (max-width: 9999px) {
   .header2 {
     display: none;
   }
@@ -528,8 +526,6 @@ footer li {
     width: 100%;
   }
   .info-room {
-    height: 80%;
-    ;
     width: 100%;
   }
   .info-activity {
@@ -542,9 +538,11 @@ footer li {
 @media screen and (max-width: 1200px) {
   .room {
     flex-direction: column-reverse;
-    height: 1000px;
+    height: 100%;
   }
   .popular {
+    flex: none;
+    height: 300px;
     margin-bottom: 50px;
     width: 100%;
   }
@@ -552,16 +550,16 @@ footer li {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 40px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0 45px;
   }
   .box-popular {
-    height: 90%;
+    height: 100%;
     width: 100%;
     margin: 0;
   }
   .host {
-    height: 100%;
+    flex: none;
+    height: 700px;
     margin: 0;
   }
   .grid-room {
@@ -578,7 +576,13 @@ footer li {
     margin: 0;
     padding: 0 20px;
     gap: 20px;
-  } 
+  }
+  .box-popular {
+    height: 80%;
+  }
+  .host {
+    height: 650px;
+  }
   .activity-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -586,24 +590,10 @@ footer li {
     "activity1 activity2 activity3"
     "activity4 activity5 activity6";
     gap: 20px;
+    height: 550px;
   }
-  .activity1 {
-    grid-area: activity1;
-  }
-  .activity2 {
-    grid-area: activity2;
-  }
-  .activity3 {
-    grid-area: activity3;
-  }
-  .activity4 {
-    grid-area: activity4;
-  }
-  .activity5 {
-    grid-area: activity5;
-  }
-  .activity6 {
-    grid-area: activity6;
+  .info-activity {
+    height: 25%;
   }
 }
 
@@ -675,14 +665,14 @@ footer li {
   }
   .popular {
     flex: none;
-    height: 700px;
+    height: 650px;
     width: 100%;
     border-radius: 0px;
   }
   .grid-popular {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 0 35px;
+    padding: 0 30px;
     margin-bottom: 20px;
   }
   .box-popular {
@@ -692,17 +682,18 @@ footer li {
   .host {
     background: none;
     flex: none;
-    height: 2000px;
+    height: 1000px;
     margin: 0 35px;
   }
   .host h2 {
     margin-left: 0;
   }
   .grid-room {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 27px;
+    margin: 0;
     padding: 0;
-    
   }
   .info-room {
     height: 40%;
@@ -711,37 +702,17 @@ footer li {
     margin: 40px 0;
   }
   .activity-container {
-    height: 1500px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    height: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
-    "activity1"
-    "activity2"
-    "activity3"
-    "activity4"
-    "activity5"
-    "activity6";
-  }
-  .activity1 {
-    grid-area: activity1;
-  }
-  .activity2 {
-    grid-area: activity2;
-  }
-  .activity3 {
-    grid-area: activity3;
-  }
-  .activity4 {
-    grid-area: activity4;
-  }
-  .activity5 {
-    grid-area: activity5;
-  }
-  .activity6 {
-    grid-area: activity6;
+    "activity1 activity2"
+    "activity3 activity4"
+    "activity5 activity6";
+    gap: 27px;
   }
   .info-activity {
-    height: 50px;
+    height: 25%;
   }
   footer {
     width: 100%;
@@ -764,9 +735,6 @@ footer li {
     height: 50px;
     width: 90px;
   } 
-  /* .border-bottom, .register {
-    font-size: 1.2rem;
-  } */
  .find-room {
     display: flex;
     flex-direction: column;
@@ -831,13 +799,18 @@ footer li {
   }
   .host {
     margin: 0;
+    height: 1000px;
+  }
+  .grid-room {
+    margin: 0 25px;
   }
   .host h2, .more {
     margin-left: 25px;
   }
   .box-room {
-    margin: 0 25px;
+    margin: 0;
   }
+
   .activity {
     margin: 0;
   }
@@ -851,10 +824,6 @@ footer li {
 
  /* mediea queries 387px */
  @media screen and (max-width: 387px) {
-  .checkbox-container {
-   flex-direction: column;
-   align-items: flex-start;
-  }
   .filter-container {
    display: flex;
    flex-direction: column;
@@ -866,22 +835,53 @@ footer li {
   .findRoom {
     margin: 30px 20px
   }
+  .popular {
+    height: 600px;
+  }
   .top-popular {
+   padding: 0 20px;
+ }
+ .grid-popular {
    padding: 0 20px;
  }
  .box-popular {
    margin: 0;
  }
+ .host {
+   height: 1600px;
+ }
+ .grid-room {
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, 1fr);
+   margin: 0 20px;
+ }
  .host h2, .more {
    margin-left: 20px;
  }
  .box-room {
-   margin: 0 20px;
+   margin: 0;
  }
  .activity h2 {
    margin-left: 20px;
  }
  .activity-container {
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(6, 1fr);
+   grid-template-areas: 
+   "activity1"
+   "activity2"
+   "activity3"
+   "activity4"
+   "activity5"
+   "activity6";
    margin: 30px 20px;
+   row-gap: 27px;
+   height: 1400px;
+ }
+ .info-activity {
+   height: 25%;
+ }
+ .abstract {
+   padding-left: 25px;
  }
 }
