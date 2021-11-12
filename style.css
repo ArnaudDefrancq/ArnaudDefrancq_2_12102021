@@ -514,7 +514,7 @@ footer li {
 }
 
 /* mediea queries grand écran */
-@media screen and (max-width: 9990px) {
+@media screen and (max-width: 9999px) {
   .header2 {
     display: none;
   }
