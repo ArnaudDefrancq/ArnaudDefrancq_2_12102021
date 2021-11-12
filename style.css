@@ -288,7 +288,6 @@ label {
   border-radius: 15px 15px 0 0;
 }
 
-
 .more {
   margin: 30px 40px;
 
@@ -515,7 +514,7 @@ footer li {
 }
 
 /* mediea queries grand écran */
-@media screen and (max-width: 9999px) {
+@media screen and (max-width: 9990px) {
   .header2 {
     display: none;
   }
