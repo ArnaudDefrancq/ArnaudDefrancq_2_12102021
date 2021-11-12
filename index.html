@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
     <link rel="shortcut icon" href="./images/logo/Reservia.svg">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/daf6fd0411.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,7 +18,7 @@
 
     <!-- Header -->
     <header class="header1">
-        <img class="logo" src="./images/logo/Reservia@3x.png" alt="Logo Reservia">
+        <img class="logo" src="./assets/images/logo/Reservia@3x.png" alt="Logo Reservia">
         <nav class="navigation">
             <a class="nav-link link-animation" href="#hebergements">Hébergements</a>
             <a class="nav-link link-animation" href="#activites">Activités</a>
@@ -25,12 +28,12 @@
 
     <header class="header2">
         <div class="header-part1">
-            <img class="logo-mobile" src="./images/logo/Reservia@3x.png" alt="logo Reservia">
+            <img class="logo-mobile" src="./assets/images/logo/Reservia@3x.png" alt="logo Reservia">
             <a class="register" href="#"><strong>S'inscrire</strong></a>
         </div>
         <div class="header-part2">
-            <a class="link-blue border-bottom" href="#">Hébergements</a>
-            <a class="border-bottom" href="#">Activités</a>
+            <a class="link-blue border-bottom" href="#hebergements">Hébergements</a>
+            <a class="border-bottom" href="#activites">Activités</a>
         </div>
     </header>
 
@@ -43,7 +46,9 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="para1">En plein centre ville ou en pleine nature</p>
             </div>
+            <!-- formualaire -->
             <form>
+                <!-- barre de recherche -->
                 <div class="search-container">
                     <div class="search-icon">
                         <i class="fas fa-map-marker-alt"></i>
@@ -55,6 +60,7 @@
                         <button class="button">Rechercher</button>
                     </div>
                 </div>
+                <!-- barre de recherche 2 -->
                 <div class="search-container2">
                     <div class="search-icon">
                         <i class="fas fa-map-marker-alt"></i>
@@ -66,15 +72,14 @@
                         <button class="button"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
+                 <!-- Filtre -->
                 <div class="filter-container">
                     <p class="filter">Filtres</p>
-
-
                     <div class="checkbox-container">
                         <input class="filter-checkbox" type="checkbox" id="economic">
                         <div class="filter-label">
                             <div class="filter-icon"><i class="fas fa-money-bill-wave"></i></div>
-                            <label class="" for="economic">Économique</label>
+                            <label for="economic">Économique</label>
                         </div>
 
                         <input class="filter-checkbox" type="checkbox" id="family">
@@ -113,7 +118,7 @@
                 <div class="grid-room">
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Auberge la Cannebière</h3>
                                 <p class="info-host">Nuit à partir de <strong>25€</strong></p>
@@ -124,7 +129,7 @@
                     </a>
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Hôtel du port</h3>
                                 <p class="info-host">Nuit à partir de <strong>52€</strong></p>
@@ -135,7 +140,7 @@
                     </a>
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Hôtel les mouettes</h3>
                                 <p class="info-host">Nuit à partir de <strong>76€</strong></p>
@@ -146,7 +151,7 @@
                     </a>
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Hôtel de la mer</h3>
                                 <p class="info-host">Nuit à partir de <strong>46€</strong></p>
@@ -157,7 +162,7 @@
                     </a>
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Auberge Le Panier</h3>
                                 <p class="info-host">Nuit à partir de <strong>23€</strong></p>
@@ -168,7 +173,7 @@
                     </a>
                     <a href="#">
                         <div class="box-room box-animation">
-                            <div style="background: url(./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) center/cover;" class="img-host"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) center/cover;" class="img-host"></div>
                             <div class="info-room">
                                 <h3>Hôtel chez Amina</h3>
                                 <p class="info-host">Nuit à partir de <strong>96€</strong></p>
@@ -182,7 +187,7 @@
                     <a class="more-link" href="#">Afficher plus</a>
                 </div>
             </div>
-
+            <!-- Les plus populaires -->
             <div class="popular">
                 <div class="top-popular">
                     <h2>Les plus populaires</h2>
@@ -191,7 +196,7 @@
                 <div class="grid-popular">
                     <a href="#">
                         <div class="box-popular box-animation">
-                            <div style="background: url(./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) center/cover;" class="img-popular"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) center/cover;" class="img-popular"></div>
                             <div class="popular-link">
                                 <div class="info-popular">
                                     <div class="flex-info">
@@ -210,7 +215,7 @@
                     </a>
                     <a href="#">
                         <div class="box-popular box-animation">
-                            <div style="background: url(./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) center/cover;" class="img-popular"></div>
+                            <div style="background: url(./assets/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) center/cover;" class="img-popular"></div>
                             <div class="popular-link">
                                 <div class="info-popular">
                                     <div class="flex-info">
@@ -229,7 +234,7 @@
                     </a>
                     <a href="#">
                         <div class="box-popular box-animation">
-                            <div style="background: url(./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) center/cover;" class="img-popular"></div>
+                            <div style="background: url(.//assets/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) center/cover;" class="img-popular"></div>
                             <div class="popular-link">
                                 <div class="info-popular">
                                     <div class="flex-info">
@@ -257,7 +262,7 @@
                 <a class="activity1" href="#">
                     <div class="activity-marseille ">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Vieux Port</h3>
                             </div>
@@ -267,7 +272,7 @@
                 <a class="activity2" href="#">
                     <div class="activity-marseille">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Fort de Pomègues</h3>
                             </div>
@@ -277,7 +282,7 @@
                 <a class="activity3" href="#">
                     <div class="activity-marseille">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Îles du Frioul</h3>
                             </div>
@@ -287,7 +292,7 @@
                 <a class="activity4" href="#">
                     <div class="activity-marseille">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Parc National des Calanques</h3>
                             </div>
@@ -297,7 +302,7 @@
                 <a class="activity5" href="#">
                     <div class="activity-marseille">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Notre-Dame-de-la-Garde</h3>
                             </div>
@@ -307,7 +312,7 @@
                 <a class="activity6" href="#">
                     <div class="activity-marseille">
                         <div class="carte box-animation">
-                            <div style="background: url(./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg) center/cover;" class="img-activity"></div>
+                            <div style="background: url(./assets/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg) center/cover;" class="img-activity"></div>
                             <div class="info-activity">
                                 <h3>Parc Longchamp</h3>
                             </div>
